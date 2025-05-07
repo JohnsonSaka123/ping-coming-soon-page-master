@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Libre Franklin",
+    sans-serif;
+  
+}
+.header{
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header img{
+  object-fit: cover;
+  max-width: 100%;
+  block-size: auto;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top-level{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.top-level .title{
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.black-text{
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.top-level .description{
+  text-align: center;
+  color: hsl(209, 33%, 12%);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+input{
+  padding: 0.6rem 0.8rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  flex: 1 1 70%;
+  width: 300px;
+  border-radius: 20px;
+}
+input::placeholder{
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+.notify-btn{
+  flex: 1 1 30%;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  width: 50%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.middle-level{
+  max-width: 530px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.middle-level img{
+  block-size: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .socials{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.social-icon{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 1px solid hsl(0, 0%, 59%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+.social-icon:hover{
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+.copyright{
+  color: hsl(0, 0%, 59%);
+  font-size: 16px;
+  font-weight: 300;
+}
+@media(max-width : 768px){
+  form{
+    flex-direction: column;
+  }
+  input{
+    flex: 1 1 50%;
+  }
+  .notify-btn{
+    width: 100%;
+  }
+  .middle-level{
+    max-width: 400px;
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  .social-icon{
+    width: 35px;
+    height: 35px;
+  }
+}
