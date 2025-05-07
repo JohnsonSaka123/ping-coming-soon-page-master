@@ -125,7 +125,7 @@ footer .socials{
     flex-direction: column;
   }
   input{
-    flex: 1 1 50%;
+    max-width: 100%;
   }
   .notify-btn{
     width: 100%;
